@@ -1,7 +1,10 @@
+import ProductList from "../components/ProductList/ProductList";
+import { getProducts } from "../data/data";
+
 function Products() {
   return ( 
     <div>
-      it is home Products
+      <ProductList products={getProducts()}/>
     </div>
   );
 }
